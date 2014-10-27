@@ -3,28 +3,31 @@
 <head>
 	<meta charset="utf-8">
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
 <body>
 <div id="container">
 
 	<header>
-		<h1 id="logo">FlaBoo</h1>
+		<a href="login.html"> 
+			<img class="flaboo" src="images/flaboo.svg" alt="Logo FlaBoo"> 
+		</a>
 	</header>
 	
 	<div id=login>
 		<div id="header_side">
 				<h1 id="contact">Contacta con nosotros!</h1>
 		</div>
-		<div id="menu_login">
+		<span id="menu_login">
 		<form action="login" method="post">
-			<p> Username: Password: </p>
-			<span class="inputTextForm"> <input type="text" name="username"> </span>
-			<span class="inputTextForm"> <input type="text" name="passwd"> </span>
-			<span class="inputTextForm"> <input type="submit" value="Entrar"> </span>
+			<p> <span id="username">Username:</span> <span id="passwd">Password: </span></p>
+			<span class="inputTextForm"> <input class="frame" type="text" name="username"> </span>
+			<span class="inputTextForm"> <input class="frame" type="text" name="passwd"> </span>
+			<span> <input id="submit" type="submit" value="Entrar"> </span>
 		</form>
-		</div>
+		</span>
 	</div>
+	<main id="loginMain">
 	<div id="imageScreenshot">
 		<img src="images/imageProfile.png" alt="Screenshot de FlaBoo" height="350" width="260" id="screenshot">
 	</div>
@@ -32,37 +35,23 @@
 	
 	<div id="registration">
 		<h1 id="h1registration">¿Aún no te has registrado?</h1>
-		<h2>Regístrate en FlaBoo!</h2>
+		<h2 id="h2registration">Regístrate en <span id="flabooReg">FlaBoo!</span></h2>
 		<form action="registration" method="post">
 			<div>
-				<fieldset id="fieldset"> <!-- Se puede eliminar borde con css: http://www.456bereastreet.com/lab/styling-form-controls-revisited/fieldset/-->
+				<fieldset id="fieldset"> 
 					<div class="inputTextReg"> Nombre y apellidos: <input type="text" name="name_surname" size="20" class="frame"> </div>
 					<div class="inputTextReg"> Correo electronico: <input type="text" name="email" size="20" class="frame"> </div>
 					<div class="inputTextReg"> Contraseña: <input type="text" name="passwd" size="20" class="frame"> </div>
 					<div class="inputTextReg"> Repetir contraseña: <input type="text" name="repeat_passwd" size="20" class="frame"> </div>
+					<input id="buttonReg" type="submit" value="Registrate!">
 				</fieldset>
 			</div>
 			<div>
-				<input id="buttonReg" type="submit" value="Registrate!">
+				<!--<input id="buttonReg" type="submit" value="Registrate!"> -->
 			</div>
 		</form>	
 	</div>
-	
-	<!--
-	<div id="registration">
-		<h1>¿Aún no te has registrado?</h1>
-		<h2>Regístrate en FlaBoo!</h2>
-		<form action="registration">
-		<ul>
-			<li> Nombre y apellidos: <input type="text" name="name_surname"> </li> 
-			<li>Correo electronico: <input type="text" name="email"> </li> 
-			<li>Contraseña: <input type="text" name="passwd"> </li> 
-			<li>Repetir contraseña: <input type="text" name="repeat_passwd"> </li> 
-		</ul>
-		<input type="submit" value="Registrate">
-		</form>	
-	</div>
-	-->
+	</main>
 </div>	
 </body>
 </html>
