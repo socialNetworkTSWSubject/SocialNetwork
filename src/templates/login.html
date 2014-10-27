@@ -19,9 +19,9 @@
 		<div id="menu_login">
 		<form action="login" method="post">
 			<p> Username: Password: </p>
-			<span> <input type="text" name="username"> </span>
-			<span> <input type="text" name="passwd"> </span>
-			<span> <input type="submit" value="Entrar"> </span>
+			<span class="inputTextForm"> <input type="text" name="username"> </span>
+			<span class="inputTextForm"> <input type="text" name="passwd"> </span>
+			<span class="inputTextForm"> <input type="submit" value="Entrar"> </span>
 		</form>
 		</div>
 	</div>
@@ -31,19 +31,19 @@
 	
 	
 	<div id="registration">
-		<h1>¿Aún no te has registrado?</h1>
+		<h1 id="h1registration">¿Aún no te has registrado?</h1>
 		<h2>Regístrate en FlaBoo!</h2>
 		<form action="registration" method="post">
 			<div>
-				<fieldset> <!-- Se puede eliminar borde con css: http://www.456bereastreet.com/lab/styling-form-controls-revisited/fieldset/-->
-					<div> Nombre y apellidos: <input type="text" name="name_surname" size="20"> </div>
-					<div> Correo electronico: <input type="text" name="email" size="20"> </div>
-					<div> Contraseña: <input type="text" name="passwd" size="20"> </div>
-					<div> Repetir contraseña: <input type="text" name="repeat_passwd" size="20"> </div>
+				<fieldset id="fieldset"> <!-- Se puede eliminar borde con css: http://www.456bereastreet.com/lab/styling-form-controls-revisited/fieldset/-->
+					<div class="inputTextReg"> Nombre y apellidos: <input type="text" name="name_surname" size="20" class="frame"> </div>
+					<div class="inputTextReg"> Correo electronico: <input type="text" name="email" size="20" class="frame"> </div>
+					<div class="inputTextReg"> Contraseña: <input type="text" name="passwd" size="20" class="frame"> </div>
+					<div class="inputTextReg"> Repetir contraseña: <input type="text" name="repeat_passwd" size="20" class="frame"> </div>
 				</fieldset>
 			</div>
 			<div>
-				<input type="submit" value="Registrate">
+				<input id="buttonReg" type="submit" value="Registrate!">
 			</div>
 		</form>	
 	</div>
