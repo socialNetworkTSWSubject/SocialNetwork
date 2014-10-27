@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div id="container">
+
+	<header>
+		<h1 id="logo">FlaBoo</h1>
+	</header>
+	
+	<div id=login>
+		<div id="header_side">
+				<h1 id="contact">Contacta con nosotros!</h1>
+		</div>
+		<div id="menu_login">
+		<form action="login" method="post">
+			<p> Username: Password: </p>
+			<span> <input type="text" name="username"> </span>
+			<span> <input type="text" name="passwd"> </span>
+			<span> <input type="submit" value="Entrar"> </span>
+		</form>
+		</div>
+	</div>
+	<div id="imageScreenshot">
+		<img src="images/imageProfile.png" alt="Screenshot de FlaBoo" height="350" width="260" id="screenshot">
+	</div>
+	
+	
+	<div id="registration">
+		<h1>¿Aún no te has registrado?</h1>
+		<h2>Regístrate en FlaBoo!</h2>
+		<form action="registration" method="post">
+			<div>
+				<fieldset> <!-- Se puede eliminar borde con css: http://www.456bereastreet.com/lab/styling-form-controls-revisited/fieldset/-->
+					<div> Nombre y apellidos: <input type="text" name="name_surname" size="20"> </div>
+					<div> Correo electronico: <input type="text" name="email" size="20"> </div>
+					<div> Contraseña: <input type="text" name="passwd" size="20"> </div>
+					<div> Repetir contraseña: <input type="text" name="repeat_passwd" size="20"> </div>
+				</fieldset>
+			</div>
+			<div>
+				<input type="submit" value="Registrate">
+			</div>
+		</form>	
+	</div>
+	
+	<!--
+	<div id="registration">
+		<h1>¿Aún no te has registrado?</h1>
+		<h2>Regístrate en FlaBoo!</h2>
+		<form action="registration">
+		<ul>
+			<li> Nombre y apellidos: <input type="text" name="name_surname"> </li> 
+			<li>Correo electronico: <input type="text" name="email"> </li> 
+			<li>Contraseña: <input type="text" name="passwd"> </li> 
+			<li>Repetir contraseña: <input type="text" name="repeat_passwd"> </li> 
+		</ul>
+		<input type="submit" value="Registrate">
+		</form>	
+	</div>
+	-->
+</div>	
+</body>
+</html>
